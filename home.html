@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Accessories - QuickMart</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header class="header">   
+    <div class="header-top">
+      <div class="logo">QuickMart</div>
+
+      <button class="address-btn">📍 Select your address</button>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option value="all">All</option>
+          <option value="grocery">Grocery</option>
+          <option value="electronics">Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="home" selected>Home</option>
+        </select>
+        <input type="text" placeholder="Search home accessories..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">👤 Hello, Sign in</a></li>
+          <li><a href="#">📦 Orders</a></li>
+          <li><a href="#" class="cart">🛒 Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <ul class="breadcrumb">
+      <li><a href="quickmart.html">Home</a></li>
+      <li>Home Accessories</li>
+    </ul>
+
+    <div class="category-banner">
+      <div class="banner-content">
+        <h1>Home Accessories</h1>
+        <p>Elevate your living space with our stylish and functional home accessories</p>
+      </div>
+    </div>
+    
+    <div class="content-wrapper">
+      <aside class="filter-sidebar">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Decorative Items</a></li>
+            <li><a href="#">Kitchen & Dining</a></li>
+            <li><a href="#">Bathroom</a></li>
+            <li><a href="#">Bedding</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Storage & Organization</a></li>
+            <li><a href="#">Wall Decor</a></li>
+          </ul>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div>
+            <input type="range" min="0" max="100" value="50">
+            <div>₹0 - ₹15000</div>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Material</h3>
+          <div>
+            <input type="checkbox" id="wood"> <label for="wood">Wood</label><br>
+            <input type="checkbox" id="metal"> <label for="metal">Metal</label><br>
+            <input type="checkbox" id="glass"> <label for="glass">Glass</label><br>
+            <input type="checkbox" id="ceramic"> <label for="ceramic">Ceramic</label><br>
+            <input type="checkbox" id="fabric"> <label for="fabric">Fabric</label><br>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Brand</h3>
+          <div>
+            <input type="checkbox" id="brand1"> <label for="brand1">HomeBliss</label><br>
+            <input type="checkbox" id="brand2"> <label for="brand2">CozyLiving</label><br>
+            <input type="checkbox" id="brand3"> <label for="brand3">ElegantSpace</label><br>
+            <input type="checkbox" id="brand4"> <label for="brand4">QuickMart Home</label><br>
+          </div>
+        </div>
+      </aside>
+      
+      <div class="main-products">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="subcategory-grid">
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Decorative Items">
+            <h3>Decorative Items</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Kitchen & Dining">
+            <h3>Kitchen & Dining</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Lighting">
+            <h3>Lighting</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Storage">
+            <h3>Storage & Organization</h3>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Decorative Vase">
+            <div class="product-info">
+              <h3 class="product-title">Hand-Crafted Ceramic Vase</h3>
+              <div class="product-rating">★★★★★ (87)</div>
+              <div class="product-price">₹1,499</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Table Lamp">
+            <div class="product-info">
+              <h3 class="product-title">Modern Nordic Table Lamp</h3>
+              <div class="product-rating">★★★★☆ (64)</div>
+              <div class="product-price">₹2,799</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Throw Pillows">
+            <div class="product-info">
+              <h3 class="product-title">Decorative Throw Pillows (Set of 2)</h3>
+              <div class="product-rating">★★★★★ (112)</div>
+              <div class="product-price">₹999</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Wall Clock">
+            <div class="product-info">
+              <h3 class="product-title">Minimalist Wall Clock</h3>
+              <div class="product-rating">★★★★☆ (53)</div>
+              <div class="product-price">₹1,249</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Special Offers</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Storage Baskets">
+            <div class="product-info">
+              <h3 class="product-title">Woven Storage Baskets (Set of 3)</h3>
+              <div class="product-rating">★★★★☆ (78)</div>
+              <div class="product-price">₹1,299 <span class="original-price">₹1,999</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Scented Candles">
+            <div class="product-info">
+              <h3 class="product-title">Luxury Scented Candles Collection</h3>
+              <div class="product-rating">★★★★★ (96)</div>
+              <div class="product-price">₹1,499 <span class="original-price">₹2,499</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Decorative Mirror">
+            <div class="product-info">
+              <h3 class="product-title">Round Decorative Wall Mirror</h3>
+              <div class="product-rating">★★★★☆ (41)</div>
+              <div class="product-price">₹2,199 <span class="original-price">₹3,499</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Throw Blanket">
+            <div class="product-info">
+              <h3 class="product-title">Soft Knitted Throw Blanket</h3>
+              <div class="product-rating">★★★★★ (129)</div>
+              <div class="product-price">₹899 <span class="original-price">₹1,499</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+    
+    <div class="night-mode-container">
+      <button id="nightModeToggle" class="night-mode-toggle">
+        <span class="icon">☀️</span>
+        <span class="text">Light Mode</span>
+      </button>
+    </div>
+    
+    <p>&copy; 2025 QuickMart. All rights reserved.</p>
+  </footer>
+
+  <script src="home.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

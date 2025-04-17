@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electronics - QuickMart</title>
+  <link rel="stylesheet" href="electronics.css">
+</head>
+<body>
+  <header class="header">   
+    <div class="header-top">
+      <div class="logo">QuickMart</div>
+
+      <button class="address-btn">📍 Select your address</button>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option value="all">All</option>
+          <option value="grocery">Grocery</option>
+          <option value="electronics" selected>Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="home">Home</option>
+        </select>
+        <input type="text" placeholder="Search electronics..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">👤 Hello, Sign in</a></li>
+          <li><a href="#">📦 Orders</a></li>
+          <li><a href="#" class="cart">🛒 Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <ul class="breadcrumb">
+      <li><a href="quickmart.html">Home</a></li>
+      <li>Electronics</li>
+    </ul>
+
+    <div class="category-banner">
+      <div class="banner-content">
+        <h1>Electronics</h1>
+        <p>Discover the latest tech with our curated selection of electronics for work and entertainment</p>
+      </div>
+    </div>
+    
+    <div class="content-wrapper">
+      <aside class="filter-sidebar">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Smartphones</a></li>
+            <li><a href="#">Laptops & Computers</a></li>
+            <li><a href="#">Audio & Headphones</a></li>
+            <li><a href="#">TVs & Displays</a></li>
+            <li><a href="#">Gaming</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Smart Home</a></li>
+          </ul>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div>
+            <input type="range" min="0" max="500" value="250">
+            <div>₹0 - ₹100000</div>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Brand</h3>
+          <div>
+            <input type="checkbox" id="brand1"> <label for="brand1">Samsung</label><br>
+            <input type="checkbox" id="brand2"> <label for="brand2">Apple</label><br>
+            <input type="checkbox" id="brand3"> <label for="brand3">Sony</label><br>
+            <input type="checkbox" id="brand4"> <label for="brand4">Dell</label><br>
+            <input type="checkbox" id="brand5"> <label for="brand5">HP</label><br>
+            <input type="checkbox" id="brand6"> <label for="brand6">Lenovo</label><br>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Rating</h3>
+          <div>
+            <input type="checkbox" id="rating5"> <label for="rating5">★★★★★</label><br>
+            <input type="checkbox" id="rating4"> <label for="rating4">★★★★☆ & Up</label><br>
+            <input type="checkbox" id="rating3"> <label for="rating3">★★★☆☆ & Up</label><br>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Deals</h3>
+          <div>
+            <input type="checkbox" id="deals1"> <label for="deals1">Today's Deals</label><br>
+            <input type="checkbox" id="deals2"> <label for="deals2">On Sale</label><br>
+            <input type="checkbox" id="deals3"> <label for="deals3">Clearance</label><br>
+          </div>
+        </div>
+      </aside>
+      
+      <div class="main-products">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="subcategory-grid">
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Smartphones">
+            <h3>Smartphones</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Laptops">
+            <h3>Laptops & Computers</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Audio">
+            <h3>Audio & Headphones</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="TVs">
+            <h3>TVs & Displays</h3>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="badge">Bestseller</div>
+            <img src="/api/placeholder/400/320" alt="Smartphone">
+            <div class="product-info">
+              <h3 class="product-title">Galaxy S25 Ultra 512GB</h3>
+              <div class="product-rating">★★★★★ (438)</div>
+              <div class="product-price">₹98,499</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Laptop">
+            <div class="product-info">
+              <h3 class="product-title">MacBook Air M4 Chip 13.6"</h3>
+              <div class="product-rating">★★★★★ (256)</div>
+              <div class="product-price">₹119,900</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="badge">New</div>
+            <img src="/api/placeholder/400/320" alt="Headphones">
+            <div class="product-info">
+              <h3 class="product-title">Sony WH-1000XM6 Wireless Headphones</h3>
+              <div class="product-rating">★★★★★ (189)</div>
+              <div class="product-price">₹34,990</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Smart TV">
+            <div class="product-info">
+              <h3 class="product-title">Samsung 65" OLED 4K Smart TV</h3>
+              <div class="product-rating">★★★★☆ (127)</div>
+              <div class="product-price">₹149,990</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Best Deals</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="badge">-20%</div>
+            <img src="/api/placeholder/400/320" alt="Tablet">
+            <div class="product-info">
+              <h3 class="product-title">iPad Air 11" 256GB Wi-Fi</h3>
+              <div class="product-rating">★★★★★ (312)</div>
+              <div class="product-price">
+                ₹56,999 <span class="original-price">₹71,299</span>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="badge">-30%</div>
+            <img src="/api/placeholder/400/320" alt="Smartwatch">
+            <div class="product-info">
+              <h3 class="product-title">Apple Watch Series 10 GPS 44mm</h3>
+              <div class="product-rating">★★★★★ (176)</div>
+              <div class="product-price">
+                ₹34,300 <span class="original-price">₹49,000</span>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="badge">-25%</div>
+            <img src="/api/placeholder/400/320" alt="Gaming Console">
+            <div class="product-info">
+              <h3 class="product-title">PlayStation 6 Digital Edition</h3>
+              <div class="product-rating">★★★★★ (423)</div>
+              <div class="product-price">
+                ₹44,990 <span class="original-price">₹59,990</span>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <div class="badge">-15%</div>
+            <img src="/api/placeholder/400/320" alt="Camera">
+            <div class="product-info">
+              <h3 class="product-title">Canon EOS R8 Mirrorless Camera</h3>
+              <div class="product-rating">★★★★☆ (89)</div>
+              <div class="product-price">
+                ₹93,999 <span class="original-price">₹110,999</span>
+              </div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+
+    <div class="night-mode-container">
+      <button id="nightModeToggle" class="night-mode-toggle">
+        <span class="icon">☀️</span>
+        <span class="text">Light Mode</span>
+      </button>
+    </div>
+
+    <p>&copy; 2025 QuickMart. All rights reserved.</p>
+  </footer>
+
+  <script src="electronics.js"></script>
+  <script srch="cart.js"></script>
+</body>
+</html>

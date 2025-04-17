@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grocery & Fresh Food - QuickMart</title>
+  <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+  <header class="header">   
+    <div class="header-top">
+      <div class="logo">QuickMart</div>
+
+      <button class="address-btn">📍 Select your address</button>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option value="all">All</option>
+          <option value="grocery" selected>Grocery</option>
+          <option value="electronics">Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="decor">Decor</option>
+        </select>
+        <input type="text" placeholder="Search grocery products..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">👤 Hello, Sign in</a></li>
+          <li><a href="#">📦 Orders</a></li>
+          <li><a href="#" class="cart">🛒 Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <ul class="breadcrumb">
+      <li><a href="quickmart.html">Home</a></li>
+      <li>Grocery & Fresh Food</li>
+    </ul>
+
+    <div class="category-banner">
+      <div class="banner-content">
+        <h1>Grocery & Fresh Food</h1>
+        <p>Fresh produce, dairy, bakery and more delivered to your door</p>
+      </div>
+    </div>
+    
+    <div class="content-wrapper">
+      <aside class="filter-sidebar">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Fresh Produce</a></li>
+            <li><a href="#">Dairy & Eggs</a></li>
+            <li><a href="#">Meat & Seafood</a></li>
+            <li><a href="#">Bakery</a></li>
+            <li><a href="#">Pantry</a></li>
+            <li><a href="#">Frozen Foods</a></li>
+            <li><a href="#">Beverages</a></li>
+          </ul>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div>
+            <input type="range" min="0" max="100" value="50">
+            <div>₹0 - ₹10000</div>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Dietary Preferences</h3>
+          <div>
+            <input type="checkbox" id="organic"> <label for="organic">Organic</label><br>
+            <input type="checkbox" id="vegan"> <label for="vegan">Vegan</label><br>
+            <input type="checkbox" id="gluten-free"> <label for="gluten-free">Gluten Free</label><br>
+            <input type="checkbox" id="non-gmo"> <label for="non-gmo">Non-GMO</label><br>
+          </div>
+        </div>
+        
+        <div class="filter-section">
+          <h3>Brand</h3>
+          <div>
+            <input type="checkbox" id="brand1"> <label for="brand1">FreshFarms</label><br>
+            <input type="checkbox" id="brand2"> <label for="brand2">Nature's Best</label><br>
+            <input type="checkbox" id="brand3"> <label for="brand3">Organic Valley</label><br>
+            <input type="checkbox" id="brand4"> <label for="brand4">QuickMart Basics</label><br>
+          </div>
+        </div>
+      </aside>
+      
+      <div class="main-products">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="subcategory-grid">
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Fresh Produce">
+            <h3>Fresh Produce</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Dairy & Eggs">
+            <h3>Dairy & Eggs</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Meat & Seafood">
+            <h3>Meat & Seafood</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Bakery">
+            <h3>Bakery</h3>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Organic Bananas">
+            <div class="product-info">
+              <h3 class="product-title">Organic Bananas (Bunch)</h3>
+              <div class="product-rating">★★★★★ (124)</div>
+              <div class="product-price">₹341.27</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Farm Fresh Eggs">
+            <div class="product-info">
+              <h3 class="product-title">Farm Fresh Eggs (Dozen)</h3>
+              <div class="product-rating">★★★★☆ (89)</div>
+              <div class="product-price">₹384.04</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Artisan Sourdough Bread">
+            <div class="product-info">
+              <h3 class="product-title">Artisan Sourdough Bread</h3>
+              <div class="product-rating">★★★★★ (56)</div>
+              <div class="product-price">₹512.33</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Grass-Fed Ground Beef">
+            <div class="product-info">
+              <h3 class="product-title">Grass-Fed Ground Beef (1lb)</h3>
+              <div class="product-rating">★★★★☆ (42)</div>
+              <div class="product-price">₹683.40</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="section-title">Weekly Specials</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Organic Avocados">
+            <div class="product-info">
+              <h3 class="product-title">Organic Avocados (3-pack)</h3>
+              <div class="product-rating">★★★★☆ (78)</div>
+              <div class="product-price">₹426.80 <span class="original-price">₹597.86</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Greek Yogurt">
+            <div class="product-info">
+              <h3 class="product-title">Greek Yogurt Variety Pack</h3>
+              <div class="product-rating">★★★★★ (103)</div>
+              <div class="product-price">₹726.16 <span class="original-price">₹939.99</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Organic Strawberries">
+            <div class="product-info">
+              <h3 class="product-title">Organic Strawberries (16oz)</h3>
+              <div class="product-rating">★★★★☆ (67)</div>
+              <div class="product-price">₹341.27 <span class="original-price">₹469.57</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Antibiotic-Free Chicken Breast">
+            <div class="product-info">
+              <h3 class="product-title">Antibiotic-Free Chicken Breast (2lb)</h3>
+              <div class="product-rating">★★★★★ (91)</div>
+              <div class="product-price">₹854.46 <span class="original-price">₹1111.05</span></div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+    
+    <div class="night-mode-container">
+      <button id="nightModeToggle" class="night-mode-toggle">
+        <span class="icon">☀️</span>
+        <span class="text">Light Mode</span>
+      </button>
+    </div>
+    
+    <p>&copy; 2025 QuickMart. All rights reserved.</p>
+  </footer>
+
+  <script src="grocery.js"></script>
+  <script srch="cart.js"></script>
+</body>
+</html>

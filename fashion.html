@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Accessories - QuickMart</title>
+  <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+  <header class="header">   
+    <div class="header-top">
+      <div class="logo">QuickMart</div>
+
+      <button class="address-btn">📍 Select your address</button>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option value="all">All</option>
+          <option value="grocery">Grocery</option>
+          <option value="electronics">Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="accessories" selected>Accessories</option>
+        </select>
+        <input type="text" placeholder="Search fashion accessories..." />
+        <button type="submit">Search</button>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">👤 Hello, Sign in</a></li>
+          <li><a href="#">📦 Orders</a></li>
+          <li><a href="#" class="cart">🛒 Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Breadcrumb & Banner -->
+    <ul class="breadcrumb">
+      <li><a href="quickmart.html">Home</a></li>
+      <li>Fashion</li>
+    </ul>
+
+    <div class="category-banner">
+      <div class="banner-content">
+        <h1>Fashion Accessories</h1>
+        <p>Complete your look with our stylish and trendy accessories collection</p>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <aside class="filter-sidebar">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Handbags</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">Sunglasses</a></li>
+            <li><a href="#">Belts</a></li>
+            <li><a href="#">Scarves</a></li>
+            <li><a href="#">Hats</a></li>
+          </ul>
+        </div>
+
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div>
+            <input type="range" min="0" max="500" value="250">
+            <div>₹0 - ₹50000</div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Style</h3>
+          <div>
+            <input type="checkbox" id="casual"> <label for="casual">Casual</label><br>
+            <input type="checkbox" id="formal"> <label for="formal">Formal</label><br>
+            <input type="checkbox" id="vintage"> <label for="vintage">Vintage</label><br>
+            <input type="checkbox" id="bohemian"> <label for="bohemian">Bohemian</label><br>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Brand</h3>
+          <div>
+            <input type="checkbox" id="brand1"> <label for="brand1">LuxeStyle</label><br>
+            <input type="checkbox" id="brand2"> <label for="brand2">Urban Chic</label><br>
+            <input type="checkbox" id="brand3"> <label for="brand3">Elegance</label><br>
+            <input type="checkbox" id="brand4"> <label for="brand4">QuickMart Collection</label><br>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Material</h3>
+          <div>
+            <input type="checkbox" id="leather"> <label for="leather">Leather</label><br>
+            <input type="checkbox" id="gold"> <label for="gold">Gold-Plated</label><br>
+            <input type="checkbox" id="silver"> <label for="silver">Silver</label><br>
+            <input type="checkbox" id="cotton"> <label for="cotton">Cotton</label><br>
+            <input type="checkbox" id="silk"> <label for="silk">Silk</label><br>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main-products">
+        <h2 class="section-title">Popular Categories</h2>
+        <div class="subcategory-grid">
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Jewelry">
+            <h3>Jewelry</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Handbags">
+            <h3>Handbags</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Watches">
+            <h3>Watches</h3>
+          </div>
+          <div class="subcategory-card">
+            <img src="/api/placeholder/400/320" alt="Sunglasses">
+            <h3>Sunglasses</h3>
+          </div>
+        </div>
+
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="badge">Bestseller</div>
+            <img src="/api/placeholder/400/320" alt="Gold Statement Necklace">
+            <div class="product-info">
+              <h3 class="product-title">Gold Statement Necklace</h3>
+              <div class="product-rating">★★★★★ (142)</div>
+              <div class="product-price">₹4275.71</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Leather Crossbody Bag">
+            <div class="product-info">
+              <h3 class="product-title">Leather Crossbody Bag</h3>
+              <div class="product-rating">★★★★☆ (98)</div>
+              <div class="product-price">₹6841.65</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="badge">New</div>
+            <img src="/api/placeholder/400/320" alt="Minimalist Watch">
+            <div class="product-info">
+              <h3 class="product-title">Minimalist Chronograph Watch</h3>
+              <div class="product-rating">★★★★★ (67)</div>
+              <div class="product-price">₹11118.22</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="/api/placeholder/400/320" alt="Polarized Sunglasses">
+            <div class="product-info">
+              <h3 class="product-title">Designer Polarized Sunglasses</h3>
+              <div class="product-rating">★★★★☆ (52)</div>
+              <div class="product-price">₹7696.97</div>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+
+    <!-- Night mode toggle button -->
+    <div class="night-mode-container">
+      <button id="nightModeToggle" class="night-mode-toggle">
+        <span class="icon">☀️</span>
+        <span class="text">Light Mode</span>
+      </button>
+    </div>
+
+    <p>&copy; 2025 QuickMart. All rights reserved.</p>
+  </footer>
+
+  <script src="fashion.js"></script>
+  <script srch="cart.js"></script>
+</body>
+</html>

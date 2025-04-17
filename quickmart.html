@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickMart – Smart Grocery Store</title>
+  <link rel="stylesheet" href="quickmart.css" >
+</head>
+<body>
+  <header class="header">   
+    <div class="header-top">
+      <div class="logo">
+        <img src="images/logo.png" alt="QuickMart Logo" class="logo-image">
+      </div>
+
+      <button class="address-btn">📍 Select your address</button>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option value="all">All</option>
+          <option value="grocery">Grocery</option>
+          <option value="electronics">Electronics</option>
+          <option value="apparel">Apparel</option>
+          <option value="decor">Decor</option>
+        </select>
+        <input type="text" placeholder="Search products..." />
+        <button type="submit">🔍</button>
+      </div>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">👤 Hello, Sign in</a></li>
+          <li><a href="#">📦 Orders</a></li>
+          <li><a href="cart.html" class="cart">🛒 Cart (0)</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav class="secondary-nav">
+      <ul>
+        <li><a href="#">Today's Deals</a></li>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="product-grid-section">
+      <h2>Featured Categories</h2>
+      <div class="product-grid">
+        <div class="category-card">
+          <div class="category-icon">🍎</div>
+          <h3>Grocery & Fresh Food</h3>
+          <p>Fresh produce, dairy, bakery & more</p>
+          <a href="grocery.html" class="button-link"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">📱</div>
+          <h3>Electronics</h3>
+          <p>Smartphones, laptops, accessories</p>
+          <a href="electronics.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">👕</div>
+          <h3>Fashion</h3>
+          <p>Clothing, footwear & accessories</p>
+          <a href="fashion.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🏠</div>
+          <h3>Home & Kitchen</h3>
+          <p>Appliances, furnishings & decor</p>
+          <a href="home.html"><button>Explore</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-grid-section">
+      <h2>Shop By Department</h2>
+      <div class="product-grid">
+        <div class="category-card">
+          <div class="category-icon">💊</div>
+          <h3>Health & Personal Care</h3>
+          <p>Vitamins, medicine & wellness</p>
+          <button>Explore</button>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🎮</div>
+          <h3>Gaming & Entertainment</h3>
+          <p>Video games, movies & music</p>
+          <button>Explore</button>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">🧸</div>
+          <h3>Toys & Baby Products</h3>
+          <p>Toys, baby gear & essentials</p>
+          <button>Explore</button>
+        </div>
+        <div class="category-card">
+          <div class="category-icon">📚</div>
+          <h3>Books & Stationery</h3>
+          <p>Books, journals & office supplies</p>
+          <button>Explore</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-announcement"><marquee>
+    🚨Welcome to QuickMart – Enjoy amazing deals on groceries, electronics, apparel & more!🚨</marquee>
+  </div>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Night Mode Button (updated structure) -->
+    <div class="night-mode-container">
+      <button id="nightModeToggle" class="night-mode-toggle">
+        <span class="icon">☀️</span>
+        <span class="text">Light Mode</span>
+      </button>
+    </div>
+  
+    <p>&copy; 2025 QuickMart. All rights reserved.</p>
+  </footer>
+
+  <script src="nightmode.js"></script>
+  <script srch="cart.js"></script>
+</body>
+</html> 
