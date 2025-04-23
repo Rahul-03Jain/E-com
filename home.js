@@ -38,4 +38,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set the initial state of the toggle
     updateButtonAppearance(document.body.classList.contains('night-mode'));
   });
+  function addToCart(item) {
+    const cart = JSON.parse(localStorage.getItem('quickmartCart')) || [];
   
+    // Check if item already exists
+    const existingIndex = cart.findIndex(cartItem => cartItem.id === item.id);
+    if (existingIndex > -1) {
+      cart[existingIndex].quantity += 1;
+    } else {
+      item.quantity = 1;
+      cart.push(item);
+    }
+  
+    localStorage.setItem('quickmartCart', JSON.stringify(cart));
+  
+    // Update cart count in header
+    const cartCount = document.getElementById('cart-count');
+    if (cartCount) {
+      cartCount.textContent = cart.reduce((sum, i) => sum + i.quantity, 0);
+    }
+  
+    alert(`${item.name} added to cart!`);
+  }  
